@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfCambioStile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCambioStile"
+        mc:Ignorable="d"
+        Style="{StaticResource BaseStyle}"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <UniformGrid Columns="1" Rows="3" Margin="8" >
+            <StackPanel Orientation="Horizontal" Margin="4">
+                <Button Content="Primo"   Margin="0 0 20 0" Style="{DynamicResource PrimaryButtonStyle}"/>
+                <Button Content="Secondo" Margin="0 0 20 0" Style="{DynamicResource SecondaryButtonStyle}"/>
+                <Button Content="Terzo"   Margin="0 0 20 0" Style="{DynamicResource SubmitButtonStyle}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="4">
+                <RadioButton Content="Primo"   Margin="0 0 20 0" />
+                <RadioButton Content="Secondo" Margin="0 0 20 0" />
+                <RadioButton Content="Terzo"   Margin="0 0 20 0" />
+            </StackPanel>
+
+            <StackPanel>
+                <ToggleButton Content="Home" Style="{DynamicResource MenuButtonStyle}" />
+                <ToggleButton Content="Articoli" Style="{DynamicResource MenuButtonStyle}" />
+                <ToggleButton Content="Varianti" Style="{DynamicResource MenuButtonStyle}" />
+            </StackPanel>
+
+        </UniformGrid>
+
+        <StackPanel Grid.Column="1" Margin="4">
+            <ComboBox Margin="4" Name="CbThemeName">
+                <ComboBox.Items>
+                    <ComboBoxItem Content="Default" />
+                    <ComboBoxItem Content="Dark" />
+                    <ComboBoxItem Content="Flat" />
+                    <ComboBoxItem Content="Modern" />
+                </ComboBox.Items>
+            </ComboBox>
+
+            <Button Content="Applica Stile" Margin="4" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
