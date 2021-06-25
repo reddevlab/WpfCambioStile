@@ -10,14 +10,13 @@ namespace WpfCambioStile
     {
         private ResourceDictionary ThemeDictionary => Resources.MergedDictionaries[0];
 
-        public string CurrentTheme { get; set; } = "Default";
+        public string CurrentTheme { get; set; } = "Dark";
 
         public App()
         {
             InitializeComponent();
 
             ApplicaTema(CurrentTheme);
-            
         }
 
         public void ApplicaTema(string tema)

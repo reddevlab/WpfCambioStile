@@ -3,5 +3,6 @@
 
     <SolidColorBrush x:Key="BluFocused" Color="#0062B1" />
     <SolidColorBrush x:Key="BackgroundGrigio" Color="#505050" />
+    <SolidColorBrush x:Key="FormBackground" Color="LightBlue" />
 
 </ResourceDictionary>
