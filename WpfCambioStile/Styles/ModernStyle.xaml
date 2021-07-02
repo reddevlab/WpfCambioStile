@@ -2,8 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
 
+    <SolidColorBrush x:Key="FormBackground" Color="LightCoral" />
+
     <Style x:Key="BaseStyle" TargetType="{x:Type Control}" >
-        <Setter Property="Background" Value="BlueViolet" />
+        <Setter Property="Background" Value="{DynamicResource FormBackground}" />
     </Style>
 
     <!--region Buttons Style-->

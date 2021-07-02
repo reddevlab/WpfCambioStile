@@ -4,7 +4,7 @@
     <SolidColorBrush x:Key="FormBackground" Color="White" />
 
     <Style x:Key="BaseStyle" TargetType="{x:Type Control}" >
-        <Setter Property="Background" Value="{StaticResource FormBackground}" />
+        <Setter Property="Background" Value="{DynamicResource FormBackground}" />
     </Style>
     
     <!--region Buttons Style-->
